@@ -1,186 +1,141 @@
 #typeDiv {
-    position: absolute;
-    top: 45%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 10%;
-    text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 10%;
+	text-align: center;
 }
 
 #txt1 {
-    font-size: 27px;
-    text-align: center;
-    color: white;
+	font-size: 27px;
+	text-align: center;
+	color: white;
 }
-
 #txt2 {
-    font-size: 25px;
-    text-align: center;
-    color: white;
+	font-size: 25px;
+	text-align: center;
+	color: white;
 }
 
-#content {
-    position: absolute;
-    top: 1%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 20%;
-    text-align: center;
+#content{
+	position: absolute;
+	top: 1%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 20%;
 }
 
-#together {
-    font-size: 30px;
-    text-align: center;
-    color: white;
+#together{
+	font-size: 30px;
+	text-align: center;
+	color: white;
 }
 
-#timer {
-    text-align: center;
-    color: white;
+#timer{
+	text-align: center;
+	color: white;
 }
 
-#d, #h, #m, #s {
-    font-size: 22px;
+#d{
+	font-size: 22px;
 }
 
-#heartTxt {
-    position: absolute;
-    display: table;
-    vertical-align: middle;
-    top: 70%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 10%;
-    height: 8%;
+#h{
+	font-size: 22px;
 }
 
-#clickMe {
-    display: inline-block;
-    font-size: 16px;
-    width: 100%;
-    text-align: center;
-    color: white;
+#m{
+	font-size: 22px;
 }
 
-#heart {
-    width: 100%;
-    height: 100%;
+#s{
+	font-size: 22px;
 }
 
-#button {
-    background-image: url("../img/love.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    background-position: center;
-    transition: 0.1s;
-    width: 100%;
-    height: 100%;
+#heartTxt{
+	position: absolute;
+	display: table;
+	vertical-align: middle;
+	top: 70%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 10%;
+	height: 8%;
+}
+
+#clickMe{
+	display: inline-block;
+	font-size: 16px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#heart{
+	width: 100%;
+	height: 100%;
+}
+
+#button{
+	background-image: url("../img/love.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	background-position: center;
+	transition: 0.1s;
+	width: 100%;
+	height: 100%;
+
 }
 
 #button:active {
-    width: 92%;
-    height: 92%;
+	width: 92%;
+	height: 92%;
 }
 
-#imgTxt {
-    position: absolute;
-    display: table;
-    vertical-align: middle;
-    top: 20%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 10%;
+#imgTxt{
+	position: absolute;
+	display: table;
+	vertical-align: middle;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 10%;
 }
 
-#img {
-    display: block;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 70%;
-    height: auto;
-    border-radius: 20%;
-    max-width: 100%;
+#img{
+	display: block;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: auto;
+	height: 100%;
+	width: 100%;
+	border-radius: 20%;
 }
 
-#Txt {
-    display: inline-block;
-    font-size: 17px;
-    width: 100%;
-    text-align: center;
-    color: white;
+#Txt{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
 }
 
-#tmp {
-    display: inline-block;
-    font-size: 17px;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-
-/* Media Queries cho thiết bị nhỏ hơn */
-@media (max-width: 600px) {
-    #txt1 {
-        font-size: 20px;
-    }
-    #txt2 {
-        font-size: 18px;
-    }
-    #together {
-        font-size: 25px;
-    }
-    #d, #h, #m, #s {
-        font-size: 18px;
-    }
-    #heartTxt {
-        width: 20%;
-        height: 16%;
-    }
-    #img {
-        width: 90%;
-        height: auto;
-        border-radius: 10%;
-    }
-    #Txt, #tmp {
-        font-size: 14px;
-    }
-}
-
-/* Media Queries cho thiết bị lớn hơn */
-@media (min-width: 1200px) {
-    #txt1 {
-        font-size: 36px;
-    }
-    #txt2 {
-        font-size: 32px;
-    }
-    #together {
-        font-size: 40px;
-    }
-    #d, #h, #m, #s {
-        font-size: 28px;
-    }
-    #heartTxt {
-        width: 8%;
-        height: 6%;
-    }
-    #img {
-        width: 60%;
-        height: auto;
-        border-radius: 15%;
-    }
-    #Txt, #tmp {
-        font-size: 20px;
-    }
+#tmp{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
 }
