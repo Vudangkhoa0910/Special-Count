@@ -1,26 +1,61 @@
-#typeDiv {
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Use a simple font for better scaling */
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Use a simple font for better scaling */
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+/* Logo Styles */
+#logo {
+    font-size: 5vw; /* Responsive font size using viewport width */
+    font-family: 'Brush Script MT', cursive; /* Elegant script font */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Centered text */
+    margin: 20px auto; /* Center alignment */
+    padding: 10px; /* Padding for better appearance */
+    border-radius: 15px; /* Rounded corners */
+    background: linear-gradient(135deg, #ff69b4, #ff1493); /* Gradient background */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and shadow on hover */
+    letter-spacing: 2px; /* Letter spacing for elegance */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: 2px solid #ff1493; /* Enhance the logo with a border */
+    max-width: 800px; /* Set maximum width for the logo */
+    width: 80%; /* Make the logo responsive */
+}
+
+/* Hover Effect for Logo */
+#logo:hover {
+    transform: translateY(-5px); /* Lift the logo on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Message Styles */
+#message {
     position: absolute;
-    top: 45%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 10%;
-    text-align: center;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the box */
+    background-color: rgba(255, 20, 147, 0.8); /* Soft pink background */
+    color: white; /* White text color */
+    font-size: 2.5vw; /* Responsive font size using viewport width */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    text-align: center; /* Center text */
+    transition: opacity 0.5s; /* Smooth transition for appearance */
+    opacity: 0; /* Start hidden */
+    z-index: 100; /* Ensure it appears above other content */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s; /* Smooth transition */
 }
 
-#txt1 {
-    font-size: 27px;
-    text-align: center;
-    color: white;
-}
-
-#txt2 {
-    font-size: 25px;
-    text-align: center;
-    color: white;
-}
-
+/* Content Styles */
 #content {
     position: absolute;
     top: 10%; /* Adjust the vertical position */
@@ -32,36 +67,31 @@
 }
 
 #together {
-    font-size: 26px; /* Slightly smaller */
+    font-size: 4vw; /* Responsive size using viewport width */
     color: #ff69b4; /* Cute pink color */
     font-family: 'Comic Sans MS', cursive;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
-#timer {
-    font-size: 20px; /* Slightly smaller */
+#timer,
+#loveTimer {
+    font-size: 3vw; /* Responsive size using viewport width */
     color: #ff69b4;
     margin-bottom: 20px; /* More space below */
 }
 
 #loveTogether {
-    font-size: 40px; /* Make this larger to stand out */
+    font-size: 5vw; /* Responsive size using viewport width */
     color: #ff1493; /* Darker pink for emphasis */
     font-family: 'Comic Sans MS', cursive;
     margin: 30px 0 10px; /* Increased spacing above and below */
     text-shadow: 1px 1px 2px rgba(255, 20, 147, 0.5); /* Soft shadow for depth */
 }
 
-#loveTimer {
-    font-size: 24px; /* Slightly larger than the first timer */
-    color: #ff1493; /* Darker pink */
-    margin: 0; /* No additional margin */
-    padding: 10px; /* Padding around timer for separation */
-}
-
+/* Timer Number Styles */
 b {
-    font-size: 32px; /* Make the numbers more prominent */
+    font-size: 3vw; /* Responsive size using viewport width */
     color: #ff1493; /* Match the love timer color */
     margin: 0 5px; /* Space around numbers */
     padding: 0 5px; /* Space around numbers */
@@ -70,52 +100,7 @@ b {
     background-color: rgba(255, 20, 147, 0.2); /* Light pink background */
 }
 
-#logo {
-    font-size: 48px; /* Larger font size for emphasis */
-    font-family: 'Brush Script MT', cursive; /* Elegant script font */
-    color: white; /* White text color for contrast */
-    text-align: center; /* Centered text */
-    margin: auto auto; /* Space above and below, center alignment */
-    padding: 20px; /* Padding for better appearance */
-    border-radius: 15px; /* Rounded corners */
-    background: linear-gradient(135deg, #ff69b4, #ff1493); /* Gradient background */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and shadow on hover */
-    letter-spacing: 2px; /* Slight letter spacing for elegance */
-    cursor: pointer; /* Pointer cursor on hover */
-    border: 2px solid #ff1493; /* Add border to enhance the logo */
-    max-width: 800px; /* Set maximum width for the logo */
-}
-
-#logo:hover {
-    transform: translateY(-5px); /* Lift the logo on hover */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
-}
-
-
-#message {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the box */
-    background-color: rgba(255, 20, 147, 0.8); /* Soft pink background */
-    color: white; /* White text color */
-    font-size: 24px; /* Font size */
-    padding: 20px; /* Padding around the text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    text-align: center; /* Center text */
-    transition: opacity 0.5s; /* Smooth transition for appearance */
-    opacity: 0; /* Start hidden */
-    z-index: 100; /* Ensure it appears above other content */
-}
-
-
-
-#d, #h, #m, #s {
-    font-size: 22px;
-}
-
+/* Heart Text Styles */
 #heartTxt {
     position: absolute;
     display: table;
@@ -130,7 +115,7 @@ b {
 
 #clickMe {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem; /* Responsive size */
     width: 100%;
     text-align: center;
     color: white;
@@ -159,6 +144,146 @@ b {
     height: 92%;
 }
 
+/* Image Text Styles */
+#imgTxt {
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 10%;
+}
+
+#img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
+    display: none; /* Initially hidden */
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#Txt {
+    display: inline-block;
+    font-size: 1.5rem; /* Responsive size */
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#tmp {
+    display: inline-block;
+    font-size: 1.2rem; /* Responsive size */
+    width: 100%;
+    text-align: center;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 600px) {
+    #txt1 {
+        font-size: 1.5rem;
+    }
+    #txt2 {
+        font-size: 1.3rem;
+    }
+    #together {
+        font-size: 2rem;
+    }
+    #d, #h, #m, #s {
+        font-size: 1.3rem;
+    }
+    #heartTxt {
+        width: 30%; /* Adjust size for smaller screens */
+        height: 16%;
+    }
+    #img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+    #Txt, #tmp {
+        font-size: 1.3rem;
+    }
+}
+
+/* Media Queries for Larger Devices */
+@media (min-width: 1200px) {
+    #txt1 {
+        font-size: 2rem;
+    }
+    #txt2 {
+        font-size: 1.8rem;
+    }
+    #together {
+        font-size: 2rem;
+    }
+    #d, #h, #m, #s {
+        font-size: 1.8rem;
+    }
+    #heartTxt {
+        width: 8%;
+        height: 6%;
+    }
+    #img {
+        width: 70%;
+        height: auto;
+        border-radius: 15%;
+    }
+    #Txt, #tmp {
+        font-size: 1.5rem;
+    }
+}
+
+/* Heart Text Styles */
+#heartTxt {
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10%;
+    height: 8%;
+}
+
+#clickMe {
+    display: inline-block;
+    font-size: 1rem; /* Responsive size */
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#heart {
+    width: 100%;
+    height: 100%;
+}
+
+#button {
+    background-image: url("../img/love.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-position: center;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+}
+
+#button:active {
+    width: 92%;
+    height: 92%;
+}
+
+/* Image Text Styles */
 #imgTxt {
     position: absolute;
     display: table;
@@ -181,7 +306,7 @@ b {
 
 #Txt {
     display: inline-block;
-    font-size: 21px;
+    font-size: 1.5rem; /* Responsive size */
     width: 100%;
     text-align: center;
     color: white;
@@ -189,28 +314,28 @@ b {
 
 #tmp {
     display: inline-block;
-    font-size: 17px;
+    font-size: 1.2rem; /* Responsive size */
     width: 100%;
     text-align: center;
     color: white;
 }
 
-/* Media Queries cho thiết bị nhỏ hơn */
+/* Media Queries for Smaller Devices */
 @media (max-width: 600px) {
     #txt1 {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
     #txt2 {
-        font-size: 18px;
+        font-size: 1.3rem;
     }
     #together {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
     #d, #h, #m, #s {
-        font-size: 18px;
+        font-size: 1.3rem;
     }
     #heartTxt {
-        width: 20%;
+        width: 30%; /* Adjust size for smaller screens */
         height: 16%;
     }
     #img {
@@ -219,23 +344,23 @@ b {
         border-radius: 10%;
     }
     #Txt, #tmp {
-        font-size: 19px;
+        font-size: 1.3rem;
     }
 }
 
-/* Media Queries cho thiết bị lớn hơn */
+/* Media Queries for Larger Devices */
 @media (min-width: 1200px) {
     #txt1 {
-        font-size: 36px;
+        font-size: 2rem;
     }
     #txt2 {
-        font-size: 32px;
+        font-size: 1.8rem;
     }
     #together {
-        font-size: 40px;
+        font-size: 2rem;
     }
     #d, #h, #m, #s {
-        font-size: 28px;
+        font-size: 1.8rem;
     }
     #heartTxt {
         width: 8%;
@@ -247,6 +372,6 @@ b {
         border-radius: 15%;
     }
     #Txt, #tmp {
-        font-size: 21px;
+        font-size: 1.5rem;
     }
 }

@@ -71,18 +71,3 @@ fadeInterval = setInterval(function() {
 		fadeinInterval = setInterval(fadein, 50);
 	}
 }, 50);
-
-
-function showMessage() {
-    var messageBox = document.getElementById("message");
-    messageBox.style.display = "block"; // Show the message box
-    messageBox.style.opacity = 1; // Set opacity to 1 (visible)
-
-    // Set a timeout to hide the message after 5 seconds
-    setTimeout(function() {
-        messageBox.style.opacity = 0; // Fade out
-        setTimeout(function() {
-            messageBox.style.display = "none"; // Hide the message box after fade out
-        }, 500); // Wait for fade out to finish
-    }, 5000); // Show for 5 seconds
-}
