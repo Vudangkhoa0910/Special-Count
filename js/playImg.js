@@ -1,4 +1,3 @@
-
 var btn = document.getElementById("heartTxt");
 btn.style.opacity = 0;
 var btnVal = 0;
@@ -14,8 +13,8 @@ function showImage(){
 	}
 }
 
-function play(){
-	if(t == 0){
+function play() {
+	if (t == 0) {
 		myImage.setAttribute("src", "");
 		myTxt.innerHTML = "";
 		imageIndex = 0;
@@ -24,12 +23,18 @@ function play(){
 	flag = 1 - flag;
 	document.getElementById("typeDiv").style.opacity = flag;
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
-	if(t == 0){
-		//setTimeout(showImage, 1000);
+
+	// Hide content when button is clicked
+	if (flag === 1) {
+		document.getElementById("content").style.display = "none";
+	}
+
+	if (t == 0) {
 		setInterval(showImage, 2500);
 	}
 	t++;
 }
+
 
 function preshowImage(){
 	document.getElementById("imgTxt").style.opacity = 0;
