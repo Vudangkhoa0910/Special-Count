@@ -1,6 +1,6 @@
 
 let i = 0;
-let text1 = "Hey! Ngọc Toả Nắng";
+let text1 = "Hey! Ngọc Yêu Toả Nắng";
 let text2 = "Let's count every day we've known each other."
 let speed = 200;
 
@@ -11,7 +11,7 @@ function typeWriter(text, para){
 	if(i < text.length){
 		document.getElementById(para).innerHTML += text.charAt(i);
 		i++;
-		speed = Math.random() * 50 + 100;
+		speed = Math.random() * 90 + 150;
 	}
 	else{
 		if(ok == 0){

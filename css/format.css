@@ -23,25 +23,94 @@
 
 #content {
     position: absolute;
-    top: 1%;
+    top: 10%; /* Adjust the vertical position */
     left: 0;
     right: 0;
     margin: auto;
-    width: 100%;
-    height: 20%;
+    width: 90%;
     text-align: center;
 }
 
 #together {
-    font-size: 30px;
-    text-align: center;
-    color: white;
+    font-size: 26px; /* Slightly smaller */
+    color: #ff69b4; /* Cute pink color */
+    font-family: 'Comic Sans MS', cursive;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 #timer {
-    text-align: center;
-    color: white;
+    font-size: 20px; /* Slightly smaller */
+    color: #ff69b4;
+    margin-bottom: 20px; /* More space below */
 }
+
+#loveTogether {
+    font-size: 40px; /* Make this larger to stand out */
+    color: #ff1493; /* Darker pink for emphasis */
+    font-family: 'Comic Sans MS', cursive;
+    margin: 30px 0 10px; /* Increased spacing above and below */
+    text-shadow: 1px 1px 2px rgba(255, 20, 147, 0.5); /* Soft shadow for depth */
+}
+
+#loveTimer {
+    font-size: 24px; /* Slightly larger than the first timer */
+    color: #ff1493; /* Darker pink */
+    margin: 0; /* No additional margin */
+    padding: 10px; /* Padding around timer for separation */
+}
+
+b {
+    font-size: 32px; /* Make the numbers more prominent */
+    color: #ff1493; /* Match the love timer color */
+    margin: 0 5px; /* Space around numbers */
+    padding: 0 5px; /* Space around numbers */
+    border: 2px solid #ff1493; /* Border around numbers */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 20, 147, 0.2); /* Light pink background */
+}
+
+#logo {
+    font-size: 48px; /* Larger font size for emphasis */
+    font-family: 'Brush Script MT', cursive; /* Elegant script font */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Centered text */
+    margin: auto auto; /* Space above and below, center alignment */
+    padding: 20px; /* Padding for better appearance */
+    border-radius: 15px; /* Rounded corners */
+    background: linear-gradient(135deg, #ff69b4, #ff1493); /* Gradient background */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and shadow on hover */
+    letter-spacing: 2px; /* Slight letter spacing for elegance */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: 2px solid #ff1493; /* Add border to enhance the logo */
+    max-width: 800px; /* Set maximum width for the logo */
+}
+
+#logo:hover {
+    transform: translateY(-5px); /* Lift the logo on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+
+#message {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the box */
+    background-color: rgba(255, 20, 147, 0.8); /* Soft pink background */
+    color: white; /* White text color */
+    font-size: 24px; /* Font size */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    text-align: center; /* Center text */
+    transition: opacity 0.5s; /* Smooth transition for appearance */
+    opacity: 0; /* Start hidden */
+    z-index: 100; /* Ensure it appears above other content */
+}
+
+
 
 #d, #h, #m, #s {
     font-size: 22px;
